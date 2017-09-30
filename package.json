@@ -1,14 +1,26 @@
 {
   "name": "expressdemo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample Express App",
+  "engines": {
+    "node": "6.11.1"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "author": "Marvin Jerremy",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinjerdim/SampleExpress"
   }
 }
