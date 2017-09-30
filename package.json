@@ -9,7 +9,8 @@
   "author": "Marvin Jerremy",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "firebase-admin": "^5.3.0"
   },
   "repository": {
     "type": "git",
