@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Sample Express App",
   "main": "index.js",
+  "engines": {
+    "node": "6.11.3"
+  },
   "scripts": {
     "start": "node index.js"
   },
