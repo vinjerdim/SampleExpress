@@ -5,7 +5,7 @@ var admin = require("firebase-admin");
 
 var serviceAccount = require("key/serviceAccountKey.json");
 
-var firebase_app = admin.initializeApp({
+var firebaseApp = admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://fir-notify-24c1c.firebaseio.com"
 });
