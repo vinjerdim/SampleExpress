@@ -4,8 +4,7 @@
   "description": "Sample Express App",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "start": "node index.js"
   },
   "author": "Marvin Jerremy",
   "license": "ISC",
