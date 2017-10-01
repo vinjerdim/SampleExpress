@@ -28,8 +28,8 @@ app.get('/users', function(req, res){
     res.send(username + ' ' + password + ' ' + email);
 });
 
-app.get('/notify/:uid', function(req, res){
-    var uid = req.params.uid;
+app.get('/notify', function(req, res){
+    var uid = req.query.uid;
     var userRef = dbAdmin.ref(uid);
     userRef.child("notificationRequest").set(1);
 
