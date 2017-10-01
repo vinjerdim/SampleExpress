@@ -28,11 +28,10 @@ app.get('/users', function(req, res){
     res.send(username + ' ' + password + ' ' + email);
 });
 
-app.get('/notif/:uid/:notif', function(req, res){
+app.get('/notify/:uid', function(req, res){
     var uid = req.params.uid;
-    var notif = req.params.notif;
     var userRef = dbAdmin.ref(uid);
-    userRef.child("notificationRequest").set(notif);
+    userRef.child("notificationRequest").set(1);
 
     userRef.on("value", function(snapshot) {
         var nr = snapshot.child("notificationRequest").val() == 1;
